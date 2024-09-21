@@ -32,14 +32,21 @@
 
             <!-- two buttons  -->
             <div>
-              <button id="" class="btn btn-outline">Add Money</button>
-              <button class="btn btn-outline btn-info">Cashout</button>
-              <button class="btn btn-outline">Transactions</button>
+              <button id="show-add-money" class="btn btn-outline">
+                Add Money
+              </button>
+              <button id="show-cashout" class="btn btn-outline btn-info">
+                Cashout
+              </button>
+              <button id="show-transaction" class="btn btn-outline">
+                Transactions
+              </button>
             </div>
 
             <div class="divider"></div>
             <!-- add money form start -->
             <div
+              id="add-money-container"
               class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
             >
               <form class="card-body">
@@ -78,8 +85,11 @@
             </div>
             <!-- add money form end  -->
 
-            <!-- add money form start  -->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <!-- cashout form start  -->
+            <div
+              id="cashout-container"
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -115,6 +125,12 @@
               </form>
             </div>
             <!-- cash out form end  -->
+
+            <!-- transaction start -->
+            <div id="transaction-container">
+              <h2 class="text-4xl text-center">Transaction History</h2>
+            </div>
+            <!-- transaction end -->
           </div>
         </div>
       </div>
@@ -123,5 +139,6 @@
     <script src="js/utilities.js"></script>
     <script src="js/addMoney.js"></script>
     <script src="js/cashout.js"></script>
+    <script src="js/features.js"></script>
   </body>
 </html>

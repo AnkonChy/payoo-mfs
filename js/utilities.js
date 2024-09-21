@@ -13,3 +13,12 @@ function getTextFieldValueById(id) {
   const textValueNumber = parseFloat(textValue);
   return textValueNumber;
 }
+
+function showSectionById(id) {
+  document.getElementById("add-money-container").classList.add("hidden");
+  document.getElementById("cashout-container").classList.add("hidden");
+  document.getElementById("transaction-container").classList.add("hidden");
+
+  //show the section with the provided id as parameter
+  document.getElementById(id).classList.remove("hidden");
+}
