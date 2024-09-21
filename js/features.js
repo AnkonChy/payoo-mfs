@@ -9,5 +9,5 @@ document.getElementById("show-cashout").addEventListener("click", function () {
 document
   .getElementById("show-transaction")
   .addEventListener("click", function () {
-    showSectionById("transaction-container");
+    showSectionById("transaction-section");
   });

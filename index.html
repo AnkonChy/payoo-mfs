@@ -47,7 +47,7 @@
             <!-- add money form start -->
             <div
               id="add-money-container"
-              class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
             >
               <form class="card-body">
                 <div class="form-control">
@@ -88,7 +88,7 @@
             <!-- cashout form start  -->
             <div
               id="cashout-container"
-              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+              class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
             >
               <form class="card-body">
                 <div class="form-control">
@@ -127,8 +127,9 @@
             <!-- cash out form end  -->
 
             <!-- transaction start -->
-            <div id="transaction-container">
-              <h2 class="text-4xl text-center">Transaction History</h2>
+            <div id="transaction-section" class="hidden">
+              <h2 class="text-3xl text-center">Transaction History</h2>
+              <div id="transaction-container" class="space-y-3"></div>
             </div>
             <!-- transaction end -->
           </div>

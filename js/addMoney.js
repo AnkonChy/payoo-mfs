@@ -13,6 +13,13 @@ document
       const newBalance = addMoneyInput + balance;
       document.getElementById("account-balance").innerText = newBalance;
 
+      //add to transaction history
+      const p = document.createElement("p");
+      p.innerText = `Added ${addMoneyInput} Tk.  Balance: ${newBalance}`;
+
+      //should be a common function
+      document.getElementById("transaction-container").appendChild(p);
+
       document.getElementById("add-money-input").value = "";
       document.getElementById("add-money-pin").value = "";
     } else {
